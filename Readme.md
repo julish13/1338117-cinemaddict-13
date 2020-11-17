@@ -1,7 +1,7 @@
 # Проект «Киноман» [![Build status][travis-image]][travis-url]
 
 * Студент: [Юлия Колупаева](https://up.htmlacademy.ru/ecmascript/13/user/1338117).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Пасунько`.
 
 ---
 
