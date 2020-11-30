@@ -5,20 +5,20 @@ import {filmsData} from "./data.js";
 const bodyElement = document.querySelector(`body`);
 
 const closePopup = () => {
-  const popupElement = document.querySelector(`.film-details`);
+  const popupElement = bodyElement.querySelector(`.film-details`);
   popupElement.remove();
 };
 
 const onClickClosePopup = () => {
-  const popupElement = document.querySelector(`.film-details`);
+  const popupElement = bodyElement.querySelector(`.film-details`);
   const closeButton = popupElement.querySelector(`.film-details__close-btn`);
   closeButton.removeEventListener(`click`, onClickClosePopup);
   closePopup();
 };
 
 export const openPopup = (evt) => {
-  const cardsCollections = document.querySelectorAll(`.film-card`);
-  let popupElement = document.querySelector(`.film-details`);
+  const cardsCollections = bodyElement.querySelectorAll(`.film-card`);
+  let popupElement = bodyElement.querySelector(`.film-details`);
   if (popupElement) {
     closePopup();
   }
